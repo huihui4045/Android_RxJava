@@ -532,7 +532,7 @@ public class MainActivity extends AppCompatActivity {
                         if (mProgressBar != null) {
                             mProgressBar.setVisibility(View.GONE);
                         }
-                        Logger.d("观察者 onCompleted()");
+                        Logger.e("观察者 onCompleted()");
                         Toast.makeText(MainActivity.this, "观察者 onCompleted()", Toast.LENGTH_SHORT).show();
                     }
 
@@ -541,7 +541,7 @@ public class MainActivity extends AppCompatActivity {
                         if (mProgressBar != null) {
                             mProgressBar.setVisibility(View.GONE);
                         }
-                        Logger.d("观察者 onError()");
+                        Logger.e("观察者 onError()");
                         Toast.makeText(MainActivity.this, "观察者 onError() " + e.getMessage(), Toast.LENGTH_SHORT).show();
 
                     }
@@ -549,7 +549,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onNext(Drawable drawable) {
                         Toast.makeText(MainActivity.this, "观察者 onNext()", Toast.LENGTH_SHORT).show();
-                        Logger.d("观察者 onNext()");
+                        Logger.e("观察者 onNext()");
                         mImageView.setImageDrawable(drawable);
                     }
                 });
@@ -1279,6 +1279,14 @@ public class MainActivity extends AppCompatActivity {
                 method23();
                 break;
             }
+
+            case 24:{
+
+
+
+                break;
+            }
+
             default: {
 
                 break;

@@ -11,6 +11,6 @@ public class Funcation {
 
     public static int getIndex(){
 
-        return 2;
+        return 6;
     }
 }
